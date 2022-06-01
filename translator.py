@@ -30,8 +30,6 @@ class Main:
         
         ####
 
-        self.photoChange = PhotoImage(file = "change.png", width=80, height=55)
-
         self.list1 = ["Turkish", "English", "German", "French", "Italian", "Arabic", "Russian", "Spanish", "Chinese", "Kurmancca", "Finnish"]
         self.list2 = ["tr", "en", "de", "fr", "it", "ar", "ru", "es", "zh-cn", "ku", "fi"]
 
@@ -51,7 +49,7 @@ class Main:
 
         self.translateButton = Button(self.root, text = "Translate", fg = 'black', bg = 'white',command = lambda: Main.translateFunction(self))
         self.translateButton.place(x=865,y=730)
-        self.changeButton = Button(self.root,image = self.photoChange, fg = 'black', bg = 'white',command = lambda: Main.changeLanguages(self))
+        self.changeButton = Button(self.root, text = "Change", fg = 'black', bg = 'white',command = lambda: Main.changeLanguages(self))
         self.changeButton.place(x=860, y=225)
 
         self.root.mainloop()
